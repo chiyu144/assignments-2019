@@ -5,15 +5,16 @@
 
 body {
     color: #212121;
-    font-family: "M PLUS Rounded 1c", "Sans-serif";
+    font-family: "Roboto", "Sans-serif";
     font-size: 16px;
+    line-height: 1.5em;
 }
 
 .logo {
     min-width: 216px;
     height: 36px;
     margin: 8px 0 4px 0;
-    background-image: url(./img/logor.png);
+    background-image: url(./img/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -70,11 +71,16 @@ nav {
     z-index: 2;
 }
 
+h1, h2, h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400; 
+}
+
 h1 {
     font-size: 44px;
-    font-weight: 400;
     text-align: center;
-    padding: 40px 24px 20px 24px;
+    padding: 40px 24px;
+    margin: 26px 0 10px 0;
 }
 
 .strong {
@@ -94,7 +100,7 @@ h1 {
 }
 
 .bigsearch {
-    font-family: "M PLUS Rounded 1c", "Sans-serif";
+    font-family: "Roboto", "Sans-serif";
     background: 0;
     border: 0;
     color: rgba(0,0,0,.54);
