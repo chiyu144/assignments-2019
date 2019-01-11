@@ -180,8 +180,6 @@ img {
 
 .showMoreBtn {
     display: none;
-    width: 110%;
-    height: 110%;
 }
 
 .showMore {
@@ -195,12 +193,14 @@ img {
     font-size: 0;
     margin-bottom: 24px;
     transition: all .25s linear;
+    visibility: hidden;
 }
 
 .showMoreBtn:checked ~ .atcWrap .showMore {
     opacity: 1;
     font-size: inherit;
     max-height: 999em;
+    visibility: visible;
 }
 
 .showMoreBtn ~ .trigger:before {
