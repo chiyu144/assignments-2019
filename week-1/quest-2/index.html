@@ -17,20 +17,22 @@
 </head>
 <body>
     <!--Navbar Start-->
-    <nav> 
-        <a class="logo" href="./"></a>
-        <input class="navicon" id="navicon" type="checkbox">
-        <label class="hamburger" for="navicon">
-                <span></span><span></span><span></span>
-        </label>
-        <ul>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Developer Progrmas</a></li>
-            <li><a href="#">Blog</a></li>     
-        </ul>
-        <a href="#"><img class="avatar" src="./img/user-avatar.svg" alt=""></a>
-    </nav>
+    <div class="navwrap">
+        <nav> 
+            <a class="logo" href="./"></a>
+            <input class="navicon" id="navicon" type="checkbox">
+            <label class="hamburger" for="navicon">
+                    <span></span><span></span><span></span>
+            </label>
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Developer Progrmas</a></li>
+                <li><a href="#">Blog</a></li>     
+            </ul>
+            <a href="#"><img class="avatar" src="./img/user-avatar.svg" alt=""></a>
+        </nav>
+    </div>
     <!--Navbar End-->
     <!--Welcome Msg Start-->
     <header>
@@ -40,12 +42,89 @@
         <div class="searchbar">
             <form class="search">
                 <span class="sf sf-search-o"></span>
-                <input class="searchfor" type="text" placeholder="Search…">
+                <input class="searchfor" type="text" placeholder="搜尋產品和說明文件">
             </form>
         </div>
     </header>
     <!--Welcome Msg End-->
-    
+    <main>
+        <section class="up">
+            <div id="upp" class="articlewrap">
+                <h2>Events<span class="old"><a href="">VIEW ALL</a></span></h2>
+                <div class="inner">
+                    <article class="left">
+                        <div class="thumbnail">
+                            <img src="./img/01.png" alt="">
+                        </div>
+                        <div class="post">
+                            <h3>Flutter Live 2018<br> December 4 | London, UK</h3>
+                            <p>Join us for Flutter Live on December 4 to experience the latest from Flutter, Google’s free and open source SDK for building high-quality native iOS and Android apps from a single codebase.</p>
+                        </div>
+                    </article>
+                    <article class="right">
+                        <div class="thumbnail">
+                            <img src="./img/02.png" alt="">
+                        </div>
+                        <div class="post">
+                            <h3>DevFest OnAir 2018<br> December 11-12 | Online</h3>
+                            <p>DevFest OnAir is an online conference featuring sessions from DevFest events around the globe. Register now to view exclusive content from Google along with an opportunity to join the Q&A forum online.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="down">
+            <div id="downn" class="articlewrap">
+                <h2>Croquis</h2>
+                <div class="inner">
+                    <article class="left">
+                        <div class="thumbnail">
+                            <img src="./img/03.png" alt="">
+                        </div>
+                        <div class="post">
+                            <h3>What Android App Bundles mean for you</h3>
+                            <p>The Android App Bundle is Android's new app publishing format. It means a smaller app for your users and a streamlined, more efficient release process for you. The app bundle also introduces modularization so you can deliver dynamic features on demand and increase discovery with Google Play Instant.</p>
+                        </div>
+                    </article>
+                    <article class="right">
+                        <div class="thumbnail">
+                            <img src="./img/04.png" alt="">
+                        </div>
+                        <div class="post">
+                            <h3>Google I/O Sessions</h3>
+                            <p>If you didn't have a chance to attend all of your favorite talks, or you want to refresh what you learned at the conference, you can (re)watch recordings of the Keynotes and Sessions on the I/O website at your convenience.</p>
+                            <p>We'd love your feedback so we can continue to tailor our content to your needs in future years! To rate a Session you attended and/or watched, <i>sign-in on the I/O website</i>, click on it from the main schedule page, and click the blue <b>Rate session</b> button.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="inner">
+                    <article class="left">
+                        <div class="thumbnail">
+                            <div class="yt">
+                            <iframe width="100%" src="https://www.youtube.com/embed/PingeD_5yPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <h3>Celebrating app makers worldwide</h3>
+                            <p>Developers, founders, product managers, designers, and others reveal what they do when they step away from their computers.</p>
+                            <p>Discover their dreams, passions, and who they are as people.</p>
+                        </div>
+                    </article>
+                    <article class="right">
+                        <div class="thumbnail">
+                            <div class="yt">
+                            <iframe width="100%" src="https://www.youtube.com/embed/ua4QGWmDfB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <h3>Google Assistant developer community program</h3>
+                            <p>When you publish an Action for the Google Assistant, you’ll be invited to join our developer community program and receive an Assistant t-shirt, plus up to $200 in Google Cloud credit each month for one year. Hit certain product milestones and you’ll be eligible for Google Home devices, invitations to exclusive events, mentorship by Googlers, and other rewards!</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
 
     </footer>

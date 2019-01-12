@@ -6,26 +6,30 @@ body {
     margin: 0;
     color: #212121;
     font-family: "Roboto", "Sans-serif";
-    font-size: 16px;
-    line-height: 1.5em;
+}
+
+.navwrap {
+    width: 100%;
+    height: 49px;
+    position: fixed;
+    display: flex;
+    top: 0;
+    border-bottom: 1px solid #bdbdbd;
+    z-index: 3;
+    background-color: #fff;
 }
 
 nav {
-    width: 100%;
-    height: 49px;
+    width: 1400px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
-    position: fixed;
-    top: 0;
-    border-bottom: 1px solid #bdbdbd;
-    background-color: #ffffff;
-    z-index: 3;
 }
 
 .logo {
-    min-width: 216px;
+    width: 216px;
     height: 36px;
     margin: 8px 0 4px 0;
     background-image: url(./img/logo.png);
@@ -43,11 +47,11 @@ nav ul {
 
 nav li {
     text-align: center;
-    padding: 0 24px;
-    flex-wrap: nowrap;
 }
 
 nav li a {
+    padding: 0 24px;
+    transition: color .2s;
     text-decoration: none;
     color: rgba(0,0,0,.54);
     white-space: nowrap;
@@ -55,6 +59,10 @@ nav li a {
 
 nav li a:hover {
     color: #757575;
+}
+
+nav li a:visited {
+    color: rgba(0,0,0,.54);
 }
 
 .navicon, .hamburger {
@@ -110,12 +118,12 @@ nav li a:hover {
 }
 
 header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.32);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     position: relative;
     height: 228px;
-    top: 35px;
+    top: 49px;
     z-index: 2;
+    box-shadow: 0 4px 8px rgba(0,0,0,.28);
 }
 
 h1, h2, h3 {
@@ -127,8 +135,7 @@ h1 {
     font-size: 44px;
     text-align: center;
     margin: 14px auto;
-    position: relative;
-    top: 66px;
+    line-height: 40px;
 }
 
 .strong {
@@ -138,6 +145,7 @@ h1 {
 .welmsg {
     height: 140px;
     position: relative;
+    padding: 40px 24px;
 }
 
 .search {
@@ -146,7 +154,7 @@ h1 {
     height: 48px;
     margin: -8px auto 48px auto;
     max-width: 816px;
-    width: 100%;
+    width: 90%;
     background: #f7f7f7;
     display: flex;
     align-items: center;
@@ -157,28 +165,18 @@ h1 {
     background: 0;
     border: 0;
     color: rgba(0,0,0,.54);
-    height: 36px;
     padding: 8px 8px 8px 72px;
     transition: color .2s;
     width: 100%;
     outline: none;
+    font-size: 16px;
 }
 
 .sf-search-o {
     position: relative;
-    left: 36px;
+    left: 30px;
+    top: 2px;
     color: rgba(0,0,0,.54);
-}
-
-h2 {
-    margin: 0 auto;
-    margin-bottom: 32px;
-    width: 100%;
-}
-
-h3 {
-    color: #039be5;
-    margin-bottom: 24px;
 }
 
 a {
@@ -189,6 +187,45 @@ a:visited {
     color:#039be5;
 }
 
+.up, .down {
+    margin: 0 auto;
+    padding: 40px 8.5%;
+    display: block;
+}
+
+.up {
+    background-color: #f7f7f7;
+}
+
+.down {
+    background-color: #ffffff;
+}
+
+.articlewrap {
+    min-height: calc(100vh - 562px);
+    max-width: 1352px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 100%;
+    font-size: 32px;
+}
+
+h3 {
+    color: #039be5;
+    margin: 0 0 24px 0;
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+main {
+    position: relative;
+    top: 49px;
+}
+
 .old {
     font-size: 16px;
     color: #039be5;
@@ -196,16 +233,55 @@ a:visited {
     margin-left: 5%;
 }
 
+.inner {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    max-width: 656px;
+    margin-bottom: 32px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    position: relative;
+    background-color: #fff;
+}
+
+.right {
+    margin-left: 40px;
+}
+
 .thumbnail {
     overflow: hidden;
 }
 
+.yt {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
 
+.yt iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
+.post {
+    padding: 10px 16px;
+}
 
+p {
+    margin-bottom: 16px;
+    line-height: 1.5em;
+}
 
-
-
+img {
+    width: 100%;
+}
 
 @media (max-width:720px) {
 /* 如果螢幕寬度小於720px，套用此區塊的設定 */
