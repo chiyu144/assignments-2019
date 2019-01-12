@@ -1,13 +1,27 @@
 * {
     box-sizing: border-box;
-    margin: 0;
 }
 
 body {
+    margin: 0;
     color: #212121;
     font-family: "Roboto", "Sans-serif";
     font-size: 16px;
     line-height: 1.5em;
+}
+
+nav {
+    width: 100%;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #bdbdbd;
+    background-color: #ffffff;
+    z-index: 3;
 }
 
 .logo {
@@ -19,28 +33,7 @@ body {
     background-repeat: no-repeat;
 }
 
-nav {
-    border-bottom: 1px solid #bdbdbd;
-    height: 49px;
-}
-
-.nawrap {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    border-bottom: 1px solid #bdbdbd;
-    background-color: #ffffff;
-    z-index: 3;
-}
-
-.menu {
-    margin-left: 48px;
-}
-
-#nabi {
+nav ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -48,26 +41,80 @@ nav {
     font-size: 14px;
 }
 
-#nabi li {
+nav li {
     text-align: center;
     padding: 0 24px;
     flex-wrap: nowrap;
 }
 
-#nabi li a {
+nav li a {
     text-decoration: none;
     color: rgba(0,0,0,.54);
     white-space: nowrap;
 }
 
-#nabi li a:hover {
+nav li a:hover {
     color: #757575;
 }
 
-.headerwrap {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0,0,0,0.2);
+.navicon, .hamburger {
+    display:none;
+}
+
+.hamburger {
     position: relative;
+    width: 30px;
+    height: 22px;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+}
+
+.hamburger span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all .25s linear;
+}
+
+.hamburger span:nth-of-type(1) {
+    top: 0;
+}
+
+.hamburger span:nth-of-type(2) {
+    top: 10px;
+}
+
+.hamburger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.navicon:checked ~ .hamburger span:nth-of-type(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+.navicon:checked ~ .hamburger span:nth-of-type(2) {
+    opacity: 0;
+}
+.navicon:checked ~ .hamburger span:nth-of-type(3) {
+    transform: translateY(-10px) rotate(45deg);
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 32px;
+    margin: 8px 0 8px 24px;
+    outline: 0;
+    vertical-align: top;
+    width: 32px;
+}
+
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.32);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+    height: 228px;
+    top: 35px;
     z-index: 2;
 }
 
@@ -79,15 +126,21 @@ h1, h2, h3 {
 h1 {
     font-size: 44px;
     text-align: center;
-    padding: 40px 24px;
-    margin: 26px 0 10px 0;
+    margin: 14px auto;
+    position: relative;
+    top: 66px;
 }
 
 .strong {
     font-weight: bold;
 }
 
-.searchwrap {
+.welmsg {
+    height: 140px;
+    position: relative;
+}
+
+.search {
     border: 6px solid #fff;
     border-radius: 8px;
     height: 48px;
@@ -99,7 +152,7 @@ h1 {
     align-items: center;
 }
 
-.bigsearch {
+.searchfor {
     font-family: "Roboto", "Sans-serif";
     background: 0;
     border: 0;
@@ -108,32 +161,13 @@ h1 {
     padding: 8px 8px 8px 72px;
     transition: color .2s;
     width: 100%;
+    outline: none;
 }
 
 .sf-search-o {
     position: relative;
     left: 36px;
     color: rgba(0,0,0,.54);
-}
-
-.up, .down {
-    margin: 0 auto;
-    padding: 40px 7%;
-    display: block;
-}
-
-.up {
-    background-color: #f7f7f7;
-}
-
-.down {
-    background-color: #ffffff;
-}
-
-.articlewrap {
-    min-height: calc(100vh - 562px);
-    max-width: 1352px;
-    margin: 0 auto;
 }
 
 h2 {
@@ -162,38 +196,16 @@ a:visited {
     margin-left: 5%;
 }
 
-.inner {
-    display: flex;
-    justify-content: center;
-}
-
-article {
-    max-width: 656px;
-    margin-bottom: 32px;
-    border-radius: 2px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-    position: relative;
-}
-
-.right {
-    margin-left: 40px;
-}
-
 .thumbnail {
     overflow: hidden;
 }
 
-.post {
-    padding: 16px;
-}
 
-p {
-    margin-bottom: 16px;
-}
 
-img {
-    width: 100%;
-}
+
+
+
+
 
 @media (max-width:720px) {
 /* 如果螢幕寬度小於720px，套用此區塊的設定 */
