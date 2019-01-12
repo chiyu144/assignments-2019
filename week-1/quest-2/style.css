@@ -126,7 +126,7 @@ header {
     box-shadow: 0 4px 8px rgba(0,0,0,.28);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Lato", sans-serif;
     font-weight: 400; 
 }
@@ -179,17 +179,17 @@ h1 {
     color: rgba(0,0,0,.54);
 }
 
-a {
+main a {
     text-decoration: none;
 }
 
-a:visited {
+main a:visited {
     color:#039be5;
 }
 
 .up, .down {
     margin: 0 auto;
-    padding: 40px 8.5%;
+    padding: 40px 9.5%;
     display: block;
 }
 
@@ -281,6 +281,82 @@ p {
 
 img {
     width: 100%;
+}
+
+footer {
+    position: relative;
+    top: 49px;
+}
+
+h4 {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+.linkwrap {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin: 0;
+    background: linear-gradient(90deg,#303c42 50%,#37424b 50%);
+    color: #fff;
+    list-style: none;
+}
+
+.linkbox {
+    padding: 24px 20px 32px 24px;
+    width: 350px;
+    height: 304px;
+}
+
+.linklist {
+    padding: 0;
+    font-size: 14px;
+}
+
+.linkitem {
+    display: block;
+    padding: 8px 0;
+}
+
+.linkitem a {
+    color: #cfd8dc;
+    text-decoration: none;
+}
+
+.linkitem a:visited {
+    color: #cfd8dc;
+}
+
+.linkitem a:hover {
+    color: #fff;
+}
+
+a:active {
+    color: #fff;
+}
+
+.bg {
+    background-color: #303c42;
+}
+
+.footlogo {
+    background-image: url(./img/footlogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #455a64;
+    display: block;
+}
+
+.footdown {
+    background-color: #455a64;
+    color: #fff;
+}
+
+.stuff {
+    margin: 0 auto;
+    height: 64px;
+    max-width: 1400px;
 }
 
 @media (max-width:720px) {
