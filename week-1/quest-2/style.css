@@ -433,6 +433,7 @@ a:active {
 }
 
 .fa a {
+    color: #fff;
     text-decoration: none;
 }
 
