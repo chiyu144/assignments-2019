@@ -189,7 +189,7 @@ main a:visited {
 
 .up, .down {
     margin: 0 auto;
-    padding: 40px 9.5%;
+    padding: 30px 9.5% 10px;
     display: block;
 }
 
@@ -212,6 +212,9 @@ h2 {
     margin-bottom: 32px;
     width: 100%;
     font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 h3 {
@@ -226,16 +229,52 @@ main {
     top: 49px;
 }
 
-.old {
-    font-size: 16px;
+.btn {
+    align-self: flex-end;
+}
+
+.btnwhite {
+    background-color: transparent;
+    box-shadow: none;
     color: #039be5;
+    padding: 8px;
+    margin: 4px;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 700;
+    height: 36px;
+    min-width: 36px;
+    outline: 0;
+    text-align: center;
+    white-space: nowrap;
+    transition: all .2s;
+}
+
+.btnwhite:hover {
+    background-color:#e2f5ffe3;
+}
+
+.btnoffset {
     position: relative;
-    margin-left: 5%;
+    bottom: 4px;
+    left: 4px;   
 }
 
 .inner {
     display: flex;
     justify-content: center;
+}
+
+.row1 {
+   min-height: 238px;
+}
+
+.row2 {
+   min-height: 253px;
+}
+
+.row3 {
+   min-height: 213px;
 }
 
 article {
@@ -272,6 +311,10 @@ article {
 
 .post {
     padding: 10px 16px;
+}
+
+.hashtag {
+    margin-top: 16px;
 }
 
 p {
@@ -345,7 +388,7 @@ a:active {
     background-repeat: no-repeat;
     border-bottom: 1px solid #455a64;
     display: block;
-    margin: 0 -24px 12px -20px;
+    margin: 0 -20px 12px -20px;
     padding: 0 24px 16px 20px;
 }
 
