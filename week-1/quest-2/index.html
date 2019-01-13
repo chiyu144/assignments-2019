@@ -50,7 +50,10 @@
     <main>
         <section class="up">
             <div class="articlewrap">
-                <h2>Events<a href="#"><span><button class="btnwhite">VIEW ALL</button></a></span></h2>
+                <div class="subtitle">
+                    <h2>Events</h2>
+                    <a href="#"><button class="btnwhite">VIEW ALL</button></a>
+                </div>
                 <div class="inner">
                     <article class="left">
                         <div class="thumbnail">
@@ -148,8 +151,8 @@
     </main>
     <footer>
         <div class="footup">
-            <ul class="linkwrap bgc1">
-                <li class="linkbox">
+            <ul class="linkwrap">
+                <li class="linkbox bgc2">
                     <h4>連結</h4>
                     <ul class="linklist">
                         <li class="linkitem"><a href="#">網誌</a></li>
@@ -160,7 +163,7 @@
                         <li class="linkitem"><a href="#">YouTube</a></li>
                     </ul>
                 </li>
-                <li class="linkbox">
+                <li class="linkbox bgc1">
                     <h4>計劃</h4>
                     <ul class="linklist">
                         <li class="linkitem"><a href="#">Women Techmakers</a></li>
@@ -170,7 +173,7 @@
                         <li class="linkitem"><a href="#">Startup Launchpad</a></li>
                         <li class="linkitem"><a href="#">User Studies</a></li>
                     </ul>
-                </li>
+                </li>                
                 <li class="linkbox bg">
                     <h4>開發人員控制台</h4>
                     <ul class="linklist">
@@ -183,7 +186,7 @@
                         <li class="linkitem"><a href="#">Chrome Web Store Dashboard</a></li>
                     </ul>
                 </li>
-                <li class="linkbox bgc2">
+                <li class="linkbox bgc">
                     <a class="footlogo" href="#">
                         <img src="./img/footlogo.png" alt="">
                     </a>
@@ -197,8 +200,35 @@
                 </li>
             </ul>
         </div>
-        <div class="footdown bgc2">
-            <div class="stuff"></div>
+        <div class="footdown">
+            <div class="stuff">
+                <div class="fl">
+                    <form action="" class="langform">
+                        <select class="langselect" name="language">
+                            <option class="lang" value="id">Bahasa Indonesia</option>
+                            <option class="lang" value="de">Deutsch</option>
+                            <option class="lang" value="en">English</option>
+                            <option class="lang" value="es">español</option>
+                            <option class="lang" value="fr">français</option>
+                            <option class="lang" value="pt-br">Português Brasileiro</option>
+                            <option class="lang" value="ru">Русский</option>
+                            <option class="lang" value="ja">日本語</option>
+                            <option class="lang" value="zh-cn">简体中文</option>
+                            <option class="lang" value="zh-tw" selected="selected">繁體中文</option>
+                            <option class="lang" value="ko">한국어</option>
+                        </select>
+                    </form>
+                    <div class="fa">
+                        <a href="#">條款</a>
+                        <span>｜</span>
+                        <a href="#">隱私權</a>
+                    </div>
+                </div>
+                <div class="fr">
+                    <div class="paper">訂閱 Google Developers 電子報</div>
+                    <a href="#"><button>訂閱</button></a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
