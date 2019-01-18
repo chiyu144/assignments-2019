@@ -94,6 +94,7 @@ function onOff() {
 }
 
 // Assignment 4-3
+
 function trigger() {
     let show = document.getElementById("show");
     let btnText = document.getElementById("showBtn");
@@ -107,3 +108,16 @@ function trigger() {
 }
 
 // Assignment 5
+
+function twoSum(nums, target){
+    for(let i = 0; i < nums.length; i++) {
+        for(let j = i+1; j < nums.length; j++) {
+            if (nums[i] + nums[j] === target) {
+                return [i,j];
+            }
+        }
+    }
+}
+console.log(twoSum([2, 7, 11, 15], 9)); // returns:[0, 1]
+console.log(twoSum([8, -2, 10, 9], 7)); // returns:[1, 3]
+console.log(twoSum([0.55, -9.6, -0.1, 0.54], -9.7)); // returns:[1, 2]
