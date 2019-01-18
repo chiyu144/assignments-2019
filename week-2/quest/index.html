@@ -14,26 +14,33 @@
     <nav> 
         <a class="logo" href="./"></a>
         <input class="navicon" id="navicon" type="checkbox">
-        <label class="hamburger" for="navicon">
+        <label class="meet" for="navicon">
+            <div class="hamburger" onclick="onOff();">
                 <span></span><span></span><span></span>
+            </div>
         </label>
-        <ul>
+        <ul class="mainavs">
             <li><a href="./about.html">About</a></li>
             <li><a href="./notice.html">Notice</a></li>
             <li><a href="./credit.html">Credit</a></li>
             <li><a href="./hashtag.html">Hashtag</a></li>     
         </ul>
+        <div id="sidenavs" class="sidenavs">
+            <a href="./about.html">About</a>
+            <a href="./notice.html">Notice</a>
+            <a href="./credit.html">Credit</a>
+            <a href="./hashtag.html">Hashtag</a>
+        </div>
     </nav>
     <!--Navbar End-->
     <!--Welcome Msg Start-->
-    <header class="bigHeader">
+    <header class="bigHeader" onclick="changeText()" id="bigHeader">
         <h1>Book Cover is like that</h1>
         <p>Photos like if they were a book cover.</p>  
     </header>
     <!--Welcome Msg End-->
     <main>
         <h2>Latest</h2>
-        <input type="checkbox" class="showMoreBtn" id="showMoreBtn" />
         <section class="atcWrap">
                 <!--Articles Start-->
                 <article class="idxatc">
@@ -79,12 +86,12 @@
                         <p>Published: 22th October 2017</p>
                     </footer>
                 </article>
-            <div class="showMore">
+            <div id="show" style="display: none;">
                 <article class="idxatc">
                     <header>
                         <h3>Sunlit Garden</h3>
                     </header>
-                        <img class="showMore" src="./img/sunlit.png" alt="">
+                        <img src="./img/sunlit.png" alt="">
                         <p>Light and shadow.</p>
                     <footer>
                         <p>Published: 9 July 2016</p>
@@ -95,16 +102,16 @@
                     <header>
                         <h3>Almighty Square</h3>
                     </header>
-                        <img class="showMore" src="./img/squar.png" alt="">
+                        <img src="./img/squar.png" alt="">
                         <p>Square is magic !</p>
                     <footer>
                         <p>Published: 17 February 2015</p>
                     </footer>
                 </article>
-            </div>
                 <!--Articles End-->
+            </div>
         </section>
-        <label for="showMoreBtn" class="trigger"></label>
+        <div class="showBtn" onclick="trigger();" id="showBtn">Show more</div>
     </main>
     <!--Footer Start-->
     <footer class="bigFooter">

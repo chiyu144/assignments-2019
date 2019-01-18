@@ -14,19 +14,27 @@
     <nav> 
         <a class="logo" href="./"></a>
         <input class="navicon" id="navicon" type="checkbox">
-        <label class="hamburger" for="navicon">
+        <label class="meet" for="navicon">
+            <div class="hamburger" onclick="onOff();">
                 <span></span><span></span><span></span>
+            </div>
         </label>
-        <ul>
+        <ul class="mainavs">
             <li><a href="./about.html">About</a></li>
             <li><a href="./notice.html">Notice</a></li>
             <li><a href="./credit.html">Credit</a></li>
-            <li><a href="./hashtag.html">Hashtag</a></li>    
+            <li><a href="./hashtag.html">Hashtag</a></li>     
         </ul>
+        <div id="sidenavs" class="sidenavs">
+            <a href="./about.html">About</a>
+            <a href="./notice.html">Notice</a>
+            <a href="./credit.html">Credit</a>
+            <a href="./hashtag.html">Hashtag</a>
+        </div>
     </nav>
     <!--Navbar End-->
     <!--Welcome Msg Start-->
-    <header class="bigHeader">
+    <header class="bigHeader" onclick="changeText()" id="bigHeader">
         <h1>Book Cover is like that</h1>
         <p>Photos like if they were a book cover.</p>  
     </header>
@@ -52,5 +60,6 @@
         <p>&copy; Julie Liao 2019</p>
     </footer>
     <!--Footer End-->
+    <script src="./main.js"></script>
 </body>
 </html>
