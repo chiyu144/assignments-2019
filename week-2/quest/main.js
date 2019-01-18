@@ -48,7 +48,12 @@ console.log(calculate(obj2));
 // Assignment 3
 
 function avg(data){
-    // your code here
+    let sum = 0;
+    for (let i = 0; i < data["products"]["length"]; i++) {
+        sum += data["products"][i]["price"];
+    }
+    let avg = sum / data["products"]["length"];
+    console.log(avg);
 }
 avg({
     size:3,
@@ -66,7 +71,7 @@ avg({
             price:250
         }
     ]
-}); // show the average price of all products
+});
 
 // Assignment 4-1
 
