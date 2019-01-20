@@ -1,7 +1,7 @@
 // Assignment 1
 
 function max(...numbers) {
-    let maxNumber = -1;
+    let maxNumber = -Infinity;
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] > maxNumber) {
             maxNumber = numbers[i];
@@ -13,6 +13,7 @@ max(1, 2, 4, 5); // result to 5
 max(5, 2, 7, 1, 6); // result to 7
 max(-9, -4, 0, -1); // result to 0
 max(-6, -3, -1, -0.1); // result to -0.1
+max(-6, -3, -5, -2); // result to -2
 
 // Assignment 2
 
