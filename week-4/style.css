@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #5d535e;
+    font-size: 16px; 
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, white 20px, transparent 1%) center,
+                linear-gradient(white 20px, transparent 1%) center,
+                #ffc776;
+    background-size: 22px 22px;
+    z-index: -1;
+}
+
+nav:before {
+    content: "";
+    width: 100%;
+    height: 52px;
+    background-color: #5d535e86;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.navicon, .meet {
+    display:none;
+}
+
+.hamburger {
+    position: relative;
+    width: 30px;
+    height: 22px;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.meet span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all .25s linear;
+}
+
+.meet span:nth-of-type(1) {
+    top: 0;
+}
+
+.meet span:nth-of-type(2) {
+    top: 10px;
+}
+
+.meet span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.navicon:checked ~ .meet span:nth-of-type(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+.navicon:checked ~ .meet span:nth-of-type(2) {
+    opacity: 0;
+}
+.navicon:checked ~ .meet span:nth-of-type(3) {
+    transform: translateY(-10px) rotate(45deg);
+}
+
+.mainavs {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 1;
+    display: flex;
+    transition: all .25s linear;
+}
+
+.mainavs li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0 18px;
+    transition: all .25s linear;
+}
+
+.mainavs li a:hover {
+    color: rgb(196, 255, 196);
+}
+
+.sidenavs {
+    display: none;
+}
+
+.logo {
+    margin: 0 20px;
+    z-index: 1;
+    width: 245px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-image: url(./img/logo.png);
+}
+
+.bigHeader {
+    text-align: center;
+    color: #7b88cf;
+    padding: 42px 0;
+    background: linear-gradient(90deg, white 20px, transparent 1%) center,
+                linear-gradient(white 20px, transparent 1%) center,
+                #ffc776;
+    background-size: 22px 22px;
+    box-shadow: 0 8px 6px -6px rgb(204, 204, 204);
+}
+
+main {
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0 6px 0;
+    color: #a8daf3;
+}
+
+.addAsg {
+    margin: 12px auto;
+    text-align: center;
+    text-decoration: none;
+    color: #f99273;
+    transition: all .25s linear;
+    display: block;
+    width: 210px;
+}
+
+.addAsg:visited {
+    color: #f99273;
+}
+
+.addAsg:hover {
+    color: #ffc776;
+}
+
+.atcWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.idxatc {
+    width: 45%;
+    margin: 12px;
+    padding: 0 14px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+}
+
+.pageatc {
+    width: 92.5%;
+    margin: 12px;
+    padding: 0 14px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+}
+
+.pagep {
+    width: 80%;
+    margin: 20px auto;
+    line-height: 2em;
+}
+
+.pagep a {
+    color: #f99273;
+    text-decoration: none;
+    transition: all .25s linear;
+}
+
+.pagep a:visited {
+    color: #f99273;
+}
+
+.pagep a:hover {
+    color: #ffc776;
+}
+
+h3, h4 {
+    margin-bottom: 0;
+}
+
+h4 {
+    margin-top: 6px; 
+}
+
+img {
+    display: block;
+    width: 90%;
+    margin: 16px auto 0 auto;
+    border-radius: 4px; 
+}
+
+#show {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.showBtn {
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    margin: 24px 30%;
+    justify-content: center;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.bigFooter {
+    max-width: 1200px;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 14px;
+}
+
+@media screen and (min-width:1200px) {
+    main {
+        max-width: 1200px;
+    }
+}     
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .logo {
+        transition: all .25s linear;
+        background-image: url(./img/logoicon.png);
+    }
+
+    .meet {
+        display:block;
+    }
+
+    .hamburger {
+        display: block;
+        transition: all .25s linear;
+    }
+
+    .mainavs {
+        display: none;
+    }
+
+    .sidenavs {
+        display: block;
+        height: 100%;
+        position: fixed;
+        z-index: 3;
+        width: 0;
+        top: 0;
+        right: 0;
+        background-color: #575257;
+        opacity: 0;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: all .25s linear;
+        padding-top: 52px;
+    }
+
+    .sidenavs a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 12px 20px;
+        font-size: 18px;
+        background-color: transparent;
+        transition: all .25s linear;
+    }
+
+    .sidenavs a:hover {
+        background-color: rgb(111, 131, 112);;
+    }
+
+    .idxatc {
+        margin: 10px;
+        padding: 0 10px;
+        border: 1px solid #cfcfcf;
+        border-radius: 4px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    body {
+        font-size: 12px; 
+    }
+
+    nav ul li {
+        padding: 7.5px 0;
+    }
+
+    .idxatc {
+        min-width: 92%;
+        margin: 10px;
+        padding: 0 10px;
+        border: 1px solid #cfcfcf;
+        border-radius: 4px;
+    }
+}
