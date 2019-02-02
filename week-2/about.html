@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dummy Book Cover</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Navbar Start-->
+    <nav> 
+        <a class="logo" href="./"></a>
+        <input class="navicon" id="navicon" type="checkbox">
+        <label class="meet" for="navicon">
+            <div class="hamburger" onclick="onOff();">
+                <span></span><span></span><span></span>
+            </div>
+        </label>
+        <ul class="mainavs">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./notice.html">Notice</a></li>
+            <li><a href="./credit.html">Credit</a></li>
+            <li><a href="./hashtag.html">Hashtag</a></li>     
+        </ul>
+        <div id="sidenavs" class="sidenavs">
+            <a href="./about.html">About</a>
+            <a href="./notice.html">Notice</a>
+            <a href="./credit.html">Credit</a>
+            <a href="./hashtag.html">Hashtag</a>
+        </div>
+    </nav>
+    <!--Navbar End-->
+    <!--Welcome Msg Start-->
+    <header class="bigHeader" onclick="changeText()" id="bigHeader">
+        <h1>Book Cover is like that</h1>
+        <p>Photos like if they were a book cover.</p>  
+    </header>
+    <!--Welcome Msg End-->
+    <main>
+        <h2>About</h2>
+        <section class="atcWrap">
+                <!--Articles Start-->
+                <article class="pageatc">
+                    <header>
+                        <h3>What is Dummy Book Cover ?</h3>
+                    </header>
+                       <p class="pagep">It's a movement original from Japanese twitter users who post their illustrations and photos like if they were a book cover.
+                        The formal name of this movement is called "それっぽくなる表紙".
+                        If you don't know Japanese, it's ok as most lines are self-explanatory like "It is a title" or "Additional meaningless text".</p>
+                    <footer>
+                        <p>Updated: 12th January 2019</p>
+                    </footer>
+                </article>
+                <!--Articles End-->
+        </section>
+    </main>
+    <!--Footer Start-->
+    <footer class="bigFooter">
+        <p>&copy; Julie Liao 2019</p>
+    </footer>
+    <!--Footer End-->
+    <script src="./main.js"></script>
+</body>
+</html>
