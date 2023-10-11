@@ -4,5 +4,4 @@
 
 #### Front-end Tech Stack
 - React.js (class component)
-- Vanilla JavaScript
-- HTML 5 + CSS 3
+- HTML 5 + CSS 3 + Vanilla JavaScript 
