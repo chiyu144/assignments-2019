@@ -3,5 +3,5 @@
 - This repository is no longer maintained, no live demo is available.
 
 #### Front-end Tech Stack
-- React.js (class component)
+- React.js (Class component)
 - HTML 5 + CSS 3 + Vanilla JavaScript 
